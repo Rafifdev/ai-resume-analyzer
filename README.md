@@ -1,87 +1,74 @@
-# Welcome to React Router!
+# 📄 AI Resume Analyzer / RESUMIND
 
-A modern, production-ready template for building full-stack React applications using React Router.
+RESUMIND is a web-based application designed to help job seekers optimize their resumes. By leveraging Artificial Intelligence (AI), the app analyzes uploaded resumes and compares them against specific Job Descriptions to provide an ATS Score, detailed feedback, and actionable improvement tips.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+<img width="1920" height="1306" alt="screencapture-localhost-5173-2026-03-08-20_19_34" src="https://github.com/user-attachments/assets/9f745f4e-4fa6-481f-97d8-16ab5f004bc4" />
 
-## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## ✨ Key Features
 
-## Getting Started
+- **Seamless PDF Upload:** Supports quick and easy resume uploads in PDF format.
+- **Client-side PDF-to-Image Conversion:** Renders PDF pages into images directly in the browser using pdfjs-dist, ensuring high performance without over-leveraging the server.
+- **Intelligent AI Analysis:** Integrated AI engine that reads resumes and correlates them with the Company Name, Job Title, and Job Description.
+- **Instant Cloud Storage:** Powered by Puter.js for seamless file management (fs) and Key-Value database storage (kv).
+- **ATS Scoring & Feedback:** Delivers a detailed breakdown of what is working well and what needs adjustment to bypass HRD/ATS screening filters.
+- **Modern UI/UX:** A responsive, elegant, and user-friendly interface built with Tailwind CSS.
 
-### Installation
+## 🛠️ Tech Stack
 
-Install the dependencies:
+This application is built using a modern web development stack:
 
-```bash
-npm install
-```
+- **Framework:** [React](https://react.dev/) / [React Router v7](https://reactrouter.com/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Backend-as-a-Service (BaaS):** [Puter.js](https://docs.puter.com/) (Menangani Auth, File System, Key-Value Store, dan AI)
+- **PDF Processing:** `pdfjs-dist` (Mozilla PDF.js)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Language:** TypeScript & JavaScript
 
-### Development
+## 🚀 Installation & Getting Started
+Follow these steps to run the project locally on your machine.
 
-Start the development server with HMR:
+## Prerequisites
+Ensure you have the following installed:
+- Node.js (v18.x or later)
+- Package manager (npm, yarn, pnpm, or bun)
 
-```bash
-npm run dev
-```
+### Steps:
 
-Your application will be available at `http://localhost:5173`.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Rafifdev/ai-resume-analyzer.git](https://github.com/Rafifdev/ai-resume-analyzer.git)
+   cd ai-resume-analyzer
+   ```
 
-## Building for Production
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+   
+4. **Start the Development Server:**
+   ```bash
+   npm run dev
+   ```
+   
+6. **Access the App:**
+   Open your browser and navigate to http://localhost:5173.
 
-Create a production build:
+### 🏗️ Deployment (Produksi)
+
+To create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-## Deployment
+The build output will be located in the build/ folder. This application supports deployment to Node.js platforms, Vercel, Railway, or via Docker.
 
-### Docker Deployment
-
-To build and run using Docker:
+### Run via Docker:
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+docker build -t ai-resume-analyzer .
+docker run -p 3000:3000 ai-resume-analyzer
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+## <p align="center"> Made with ❤️ by <a href="https://www.google.com/search?q=https://github.com/Rafifdev">Rafifdev</a> </p>
