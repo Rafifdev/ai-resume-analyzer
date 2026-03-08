@@ -71,4 +71,4 @@ docker build -t ai-resume-analyzer .
 docker run -p 3000:3000 ai-resume-analyzer
 ```
 
-## <p align="center"> Made with ❤️ by <a href="https://www.google.com/search?q=https://github.com/Rafifdev">Rafifdev</a> </p>
+## <p align="center"> Made with ❤️ by <a href="https://github.com/Rafifdev">Rafifdev</a> & <a href="https://github.com/Andilauww">Andilauww</a> </p>
